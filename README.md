@@ -12,7 +12,8 @@ Top view of board
 
 Left is the original Graphics Gremlin, right is my modified design.
 
-* Bootup and CGA compatibliity tester: https://www.youtube.com/watch?v=xLy6on_o4YM
+* Bootup and CGA compatibility tester (Brown fixed): https://www.youtube.com/watch?v=Ap-goSkkSUI
+* Bootup and CGA compatibility tester (Deprecated): https://www.youtube.com/watch?v=xLy6on_o4YM
 * 8088MPH: https://www.youtube.com/watch?v=WLpNmEhdTe4
 * Area5150 (using CGA overscan): https://www.youtube.com/watch?v=9wYU6qMWlpE
 
@@ -145,9 +146,17 @@ iceprog -p isavideo.binm
 iceprog -p build/isavideo.binm
 ```
 
-## Known issue with brown colour
+## Special handling for brown colour
 
-This palette value "I:0 R:1 G:1 B:0" is not handled correctly and is displayed as dark yellow instead of brown as of the CGA standard. This is due to lack of pins on the FPGA to provide more than a 4-bit RGBI output to the DVI transmitter.
+The PCB and code treats the palette value "I:0 R:1 G:1 B:0" specially to produce a brown instead of dark yellow as per the CGA standard.
+
+```verilog
+// video[1] is the original green value
+assign hdmi_grn = video[1] ^ (hdmi_red & video[1] & (hdmi_blu ^ 1) & (hdmi_int ^ 1));
+assign hdmi_grn_int = hdmi_int ^ (hdmi_red & video[1] & (hdmi_blu ^ 1) & (hdmi_int ^ 1));
+```
+
+This is done using the above boolean logic to lower the green value by using the dedicated hdmi_green_int pin. This logic is [provided by @spbnick](https://github.com/yeokm1/yeokm1.github.io/discussions/115#discussioncomment-7022872).
 
 <img src="images\gg-hdmi-cga-test.jpg" width="600">
 
@@ -162,6 +171,12 @@ As part of my testing, I also made a small FPGA test project using another FPGA 
 The FPGA test board reads the raw RGBI, HS, VS, DE and CLK signals that are given to the DVI transmitter and displays the output using its own HDMI output.
 
 The code is heavily based on the [HDMI_FPGA](https://github.com/dominic-meads/HDMI_FPGA/) project by Dominic Meads and runs on Vivado 2023.
+
+## Releases
+
+* 2.1 (9 Aug 2021): Initial release for GG (HDMI)
+* 2.2 (17 Sept 2023): Extra Green control line for TFP410
+* 2.3 (13 Oct 2023): Corrected VGA port footprint bug
 
 # The Graphics Gremlin - a Retro ISA Video Card
 
@@ -251,12 +266,12 @@ The red switch bank on the top right of the card controls two things: the bitstr
 
 The bitstream is selected using switches 3 and 4:
 
-|   | 3      | 4      | Description | Default                                   |   |
-|---|--------|--------|-------------|-------------------------------------------|---|
-|   | open   | open   | Bitstream 0 | MDA (VGA compatible signal)               |   |
-|   | open   | closed | Bitstream 1 | MDA (MDA monitors only)                   |   |
-|   | closed | open   | Bitstream 2 | CGA (both VGA and CGA compatible signals) |   |
-|   | closed | closed | Bitstream 3 | Not used                                  |   |
+| 3      | 4      | Description | Default                                   |
+|--------|--------|-------------|-------------------------------------------|
+| open   | open   | Bitstream 0 | MDA (VGA compatible signal)               |
+| open   | closed | Bitstream 1 | MDA (MDA monitors only)                   |
+| closed | open   | Bitstream 2 | CGA (both VGA and CGA compatible signals) |
+| closed | closed | Bitstream 3 | Not used                                  |
 
 For example, if you want to use MDA with a VGA monitor, set switches 3 and 4
 to the open (up) position. (CGA has support for both VGA and CGA monitors built in since it implements a line doubler.)
