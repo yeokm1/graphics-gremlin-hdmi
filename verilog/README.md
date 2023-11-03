@@ -18,7 +18,7 @@ The FPGA code is divided into two major sets of files, those for CGA graphics an
 CGA graphics logic is similar to MDA and shares the same crtc6845.v logic, but the cards are different enough that I couldn't share more.
 * cga\_top.v: Instantiates top level CGA logic with 60 Hz refresh rate.
 * cga70\_top.v: Instantiates top level CGA logic with 70Hz refresh rate if higher pixel clock is required. (Composite displays are unlikely to work in this mode)
-* cga\_overscan_\_top.v: Instantiates top level CGA logic with 60Hz refresh rate and show overscan area. (Not all HDMI monitors can accept this)
+* cga\_overscan\_top.v: Instantiates top level CGA logic with 60Hz refresh rate and show overscan area. (Not all HDMI monitors can accept this)
 * cga.v: Implements the ISA bus interface, CGA control registers, wait state generator, and most of the other CGA modules
 * cga\_sequencer.v: Generates most of the timing signals used on the card, including memory fetches and pixel engine timing.
 * cga\_vram.v: Implements a very basic address MUX for the SRAM interface. This actually causes too much CGA snow, and should be improved using the MDA VRAM interface as a model.
@@ -27,7 +27,7 @@ CGA graphics logic is similar to MDA and shares the same crtc6845.v logic, but t
 * cga\_composite.v: Contains the flip flops used to generate NTSC composite color as well as new sync pulses. The output is a 7-bit signal passed off to the green DAC channel for the RCA jack on the card.
 * cga\_scandoubler.v: A very basic scan doubler to convert 15.7KHz CGA video to 31.4KHz VGA video. To save memory, this is done using 4-bit digital RGBI signals.
 * cga\_vgaport.v: This module takes RGBI digital video from the scan doubler and turns it into numbers that drive the resistor ladder DAC connected to the VGA port. It produces CGA brown instead of dark yellow.
-* cga\_hdmiport.v: This module takes RGBI digital video from the scan doubler to drive the DVI transmitter. Dark Yellow is still shown due to pin limitations.
+* cga\_hdmiport.v: This module takes RGBI digital video from the scan doubler to drive the DVI transmitter. It will produce Brown at CGA color #6 by controlling the dedicated Green intensity control pin.
 
 Other miscellaneous files include:
 * cga.hex and mda.hex: character ROM

@@ -14,6 +14,7 @@ Left is the original Graphics Gremlin, right is my modified design.
 * Bootup and CGA compatibility tester (Deprecated): https://www.youtube.com/watch?v=xLy6on_o4YM
 * 8088MPH: https://www.youtube.com/watch?v=WLpNmEhdTe4
 * Area5150 (using CGA overscan): https://www.youtube.com/watch?v=9wYU6qMWlpE
+* My talk on this project: https://www.youtube.com/watch?v=r_GiEIe_oZk
 
 Here is the list of changes:
 
