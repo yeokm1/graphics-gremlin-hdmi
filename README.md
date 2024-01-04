@@ -176,6 +176,7 @@ The code is heavily based on the [HDMI_FPGA](https://github.com/dominic-meads/HD
 * 2.1 (9 Aug 2021): Initial release for GG (HDMI)
 * 2.2 (17 Sept 2023): Extra Green control line for TFP410
 * 2.3 (13 Oct 2023): Corrected VGA port footprint bug
+* 2.4 (4 Jan 2024): Kicad 7.10, cleaned up schematic errors, removed unused traces, update pcb symbols and 3D models, cleaned up BOM. (No functional difference with 2.3)
 
 # The Graphics Gremlin - a Retro ISA Video Card
 
