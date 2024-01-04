@@ -1,6 +1,6 @@
 # Graphics Gremlin HDMI
 
-This is a modified version of the Graphics Gremlin ISA graphics card to include a HDMI port. This is still based on the same Lattice ICE40HX4K FPGA. The latest version now display CGA colour 6 brown correctly.
+This is a modified version of the Graphics Gremlin ISA graphics card to include a HDMI port. This is still based on the same Lattice ICE40HX4K FPGA. The latest version now displays CGA colour 6 brown correctly.
 
 <img src="images\gg-hdmi-board.jpg" width="600">
 

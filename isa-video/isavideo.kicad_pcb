@@ -5054,7 +5054,7 @@
       (net 90 "/RA18") (pinfunction "A18") (pintype "input") (tstamp 04d6d203-6fd9-4b48-b52c-748fac7d98b4))
     (pad "36" smd oval (at 4.7752 -10.795) (size 2.3368 0.7112) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 285 "unconnected-(U7-NC-Pad36)") (pinfunction "NC") (pintype "no_connect") (tstamp 6a83246d-e6a3-40f7-9fac-f06675f1db59))
-    (model ":3d:SOJ-36.STEP"
+    (model ":KICAD7_3DMODEL_DIR:Package_SO.3dshapes/SOJ-36_10.16x23.49mm_P1.27mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
