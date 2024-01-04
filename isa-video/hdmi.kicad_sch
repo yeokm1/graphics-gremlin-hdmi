@@ -6,8 +6,8 @@
 
   (title_block
     (title "HDMI")
-    (date "2023-09-17")
-    (rev "2.2")
+    (date "2024-01-04")
+    (rev "2.4")
   )
 
   (lib_symbols
@@ -3851,9 +3851,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000610a5499"
           (reference "C32") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -4048,9 +4045,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000610a5499"
           (reference "C33") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "C?") (unit 1)
         )
       )
     )
@@ -4247,9 +4241,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000610a5499"
           (reference "C34") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -4444,9 +4435,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000610a5499"
           (reference "R42") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "R?") (unit 1)
         )
       )
     )
