@@ -47,3 +47,4 @@ Item,Qty,Designator,Comment,Footprint,Mouser,Non-Mouser Part Number
 46,1,U12,TFP410PAP,Package_QFP:HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask4.4x4.4mm_ThermalVias,595-TFP410PAP,
 47,1,X1,10MHz,Passive:XTAL320X250X120-4,520-ECS-2333-100-BNT,
 48,1,X2,14.318MHz,Passive:XTAL320X250X120-4,815-ASE-14.318MLCT,
+49,2,-,Jack screw for VGA port,UNC 4#40,710-94511000,
