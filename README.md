@@ -39,13 +39,13 @@ Left is the original Graphics Gremlin, right is my modified design.
 
 Readme of the original Graphics Gremlin project can be found [here](original_README.md).
 
-## How to create your own board?
+# How to replicate this board and use it?
 
 1. [Fabrication guidelines](https://github.com/yeokm1/graphics-gremlin-hdmi/wiki/Fabrication-guidelines)
 
 2. [Flashing FPGA bitstream](https://github.com/yeokm1/graphics-gremlin-hdmi/wiki/Flashing-bitstream)
 
-3. [Testing the board]()
+3. [Testing the board](https://github.com/yeokm1/graphics-gremlin-hdmi/wiki/Testing-procedures)
 
 4. Usage guide below:
 
@@ -73,7 +73,7 @@ Sample of the different colours when testing the card on my [486 PC](https://git
 | 1      | closed=composite mode. open=VGA mode |
 | 2      | closed=thin font. open=normal font   |
 
-**Note that VGA and Composite cannot be used be used simultaneously.** No change from original Graphics Gremlin.
+**Note that VGA and Composite cannot be used simultaneously.** No change from original Graphics Gremlin. HDMI will work on all modes.
 
 ## Switches 3 and 4
 
@@ -140,7 +140,7 @@ make -j$(nproc)
 sudo make install
 ```
 
-To program the bitstream to the board, I used `iceprog` from OSS CAD Suite. Follow the Windows instructions in the original Grahpics Gremlin readme below.
+To program the bitstream to the board, I used `iceprog -p` from OSS CAD Suite. Follow the [flash instructions](https://github.com/yeokm1/graphics-gremlin-hdmi/wiki/Flashing-bitstream). 
 
 ## Code compilation
 
