@@ -10,7 +10,7 @@ Item,Qty,Designator,Comment,Footprint,Mouser,Non-Mouser Part Number
 9,3,"FID1, FID2, FID3",Fiducial,Fiducials:Fiducial_1mm_Dia_2mm_Outer,DNP,
 10,3,"FL1, FL2, FL3",BLM18RK601SN1D,libraries:BEADC1608X95N,81-BLM18RK601SN1,
 11,1,J1,PROG,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical,,PZ254-2-04-Z-8.5
-12,1,J2,DB15_Female_HighDensity_MountingHoles,Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm,571-2311763-1,
+12,1,J2,DB15_Female_HighDensity_MountingHoles,Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm,156-3315-E,
 13,1,J3,PJRAN1X1U04X,libraries:SWITCHCRAFT_PJRAN1X1U04X,502-PJRAN1X1U04X,
 14,1,J4,10029449-111RLF,libraries:HDMI_A_Amphenol_10029449-111,649-10029449-111RLF,
 15,1,J5,DNP,Conn:BUS_PC_8BIT,DNP,
