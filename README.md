@@ -89,7 +89,6 @@ No change from original Graphics Gremlin.
 |-- isa-video: Kicad Design files
 |-- verilog: Updated Verilog code to support HDMI
 |-- vga_display_status: Vivado project to process ICE40 FPGA output to DVI transmiter that runs on my Mimas A7 FPGA board.
-|-- isabracket.stl: Card bracket for the original Grahpics Gremlin. (Not compatible with this new design)
 ```
 
 ## Verilog Toolchain
