@@ -84,18 +84,20 @@ Sample of the different colours when testing the card on my [486 PC](https://git
 | closed | open   | Bitstream 2 | CGA 60Hz               |
 | closed | closed | Bitstream 3 | CGA 60Hz with overscan |
 
-#### CGA 60 and 70Hz 
+### CGA 60 and 70Hz 
 After internal scandoubling, the CGA 60Hz will produce a 640x400x60Hz output suitable for most VGA monitors. While this works for the HDMI LCD monitors I have tested, it is technically below the DVI specification of a minimum of 640x480x60Hz and 25.175Mhz pixel clock. 
 
 To meet the specification in case some monitors insist, I have added another mode CGA 70Hz which will produce 640x400 at 70Hz. (Actually 71Hz due to precision limitations of clock multiplying) This 70Hz is however not compatible with composite displays including the one inside IBM5155.
 
-#### CGA 60Hz with overscan
+### CGA 60Hz with overscan
 
 The CGA overscan bitstream will show the overscan sections beyond the usual display area just short of Hsync and Vsync. Overscan is used in some demos like Area 5150. However not all HDMI monitors can accept this signal and/or display this properly.
 
 I notice that while a monitor may initially accept this mode, tendency is it will randomly throw you display errors later.
 
 **The purpose of this mode is just for debug and demo purposes**.
+
+# Development info
 
 ## Directory structure
 
