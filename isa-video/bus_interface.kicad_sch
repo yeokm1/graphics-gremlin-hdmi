@@ -6,8 +6,8 @@
 
   (title_block
     (title "ISA Bus Interface")
-    (date "2023-09-17")
-    (rev "2.2")
+    (date "2024-01-04")
+    (rev "2.4")
   )
 
   (lib_symbols
@@ -3586,9 +3586,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "J5") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "J5") (unit 1)
-        )
       )
     )
   )
@@ -3817,9 +3814,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "U11") (unit 3)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 3)
-        )
       )
     )
   )
@@ -3860,9 +3854,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "U11") (unit 4)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 4)
         )
       )
     )
@@ -3971,7 +3962,7 @@
   (symbol (lib_id "Device:C_Small") (at 59.69 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061561f7a)
-    (property "Reference" "C?" (at 62.0268 153.7716 0)
+    (property "Reference" "C23" (at 62.0268 153.7716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 62.0268 156.083 0)
@@ -3990,12 +3981,6 @@
     (pin "2" (uuid 320ece6c-b060-4343-be3d-79d5b94a1fd0))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "C?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "C23") (unit 1)
         )
@@ -4006,7 +3991,7 @@
   (symbol (lib_id "Device:C_Small") (at 68.58 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061561f80)
-    (property "Reference" "C?" (at 70.9168 153.7716 0)
+    (property "Reference" "C24" (at 70.9168 153.7716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 70.9168 156.083 0)
@@ -4025,12 +4010,6 @@
     (pin "2" (uuid e8ea7837-7b06-4147-97ad-b4f45bfd8699))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "C?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "C24") (unit 1)
         )
@@ -4041,7 +4020,7 @@
   (symbol (lib_id "power:+3V3") (at 59.69 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061561f8c)
-    (property "Reference" "#PWR?" (at 59.69 152.4 0)
+    (property "Reference" "#PWR066" (at 59.69 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 60.071 144.1958 0)
@@ -4056,12 +4035,6 @@
     (pin "1" (uuid 2b66c285-9f01-4d0b-a894-71f644054455))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000603a03ff"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "#PWR066") (unit 1)
         )
@@ -4072,7 +4045,7 @@
   (symbol (lib_id "power:GND") (at 68.58 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061561f92)
-    (property "Reference" "#PWR?" (at 68.58 167.64 0)
+    (property "Reference" "#PWR068" (at 68.58 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 68.707 165.6842 0)
@@ -4087,12 +4060,6 @@
     (pin "1" (uuid dec831c2-8b90-48d3-940d-65ed4d17a9e3))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000603a03ff"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "#PWR068") (unit 1)
         )
@@ -4121,9 +4088,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "#PWR067") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -4131,7 +4095,7 @@
   (symbol (lib_id "Device:C_Small") (at 77.47 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006156fafb)
-    (property "Reference" "C?" (at 79.8068 153.7716 0)
+    (property "Reference" "C25" (at 79.8068 153.7716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 79.8068 156.083 0)
@@ -4150,12 +4114,6 @@
     (pin "2" (uuid b1e8bbba-e730-42c2-bdeb-fd6366f5c91e))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "C?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "C25") (unit 1)
         )
@@ -4166,7 +4124,7 @@
   (symbol (lib_id "Device:C_Small") (at 86.36 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006156fb01)
-    (property "Reference" "C?" (at 88.6968 153.7716 0)
+    (property "Reference" "C26" (at 88.6968 153.7716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 88.6968 156.083 0)
@@ -4185,12 +4143,6 @@
     (pin "2" (uuid ad60f1a2-6f14-437f-91bb-c6ada96d6892))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "C?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "C26") (unit 1)
         )
@@ -4201,7 +4153,7 @@
   (symbol (lib_id "power:+3V3") (at 77.47 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006156fb0d)
-    (property "Reference" "#PWR?" (at 77.47 152.4 0)
+    (property "Reference" "#PWR069" (at 77.47 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 77.851 144.1958 0)
@@ -4216,12 +4168,6 @@
     (pin "1" (uuid f06a3bec-b8aa-4393-b3f2-cc6f81896a5d))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000603a03ff"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "#PWR069") (unit 1)
         )
@@ -4232,7 +4178,7 @@
   (symbol (lib_id "power:GND") (at 86.36 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006156fb13)
-    (property "Reference" "#PWR?" (at 86.36 167.64 0)
+    (property "Reference" "#PWR071" (at 86.36 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 86.487 165.6842 0)
@@ -4247,12 +4193,6 @@
     (pin "1" (uuid 95c02c0c-f619-4e12-9004-2e048a65a1a7))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000603a03ff"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "#PWR071") (unit 1)
         )
@@ -4280,9 +4220,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00005fffc5de"
           (reference "#PWR070") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )

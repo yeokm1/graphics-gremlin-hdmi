@@ -6,8 +6,8 @@
 
   (title_block
     (title "Power Regulators and Reset Circuit")
-    (date "2023-09-17")
-    (rev "2.2")
+    (date "2024-01-04")
+    (rev "2.4")
   )
 
   (lib_symbols
@@ -2159,9 +2159,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR0101") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -2192,9 +2189,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "U10") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 1)
-        )
       )
     )
   )
@@ -2220,9 +2214,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR056") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -2247,9 +2238,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR055") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2280,9 +2268,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "R20") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "R?") (unit 1)
-        )
       )
     )
   )
@@ -2307,9 +2292,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR048") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2336,9 +2318,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR044") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -2363,9 +2342,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR050") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2392,9 +2368,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR045") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -2419,9 +2392,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR051") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2594,9 +2564,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "U1") (unit 5)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 5)
-        )
       )
     )
   )
@@ -2627,9 +2594,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "U9") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 1)
-        )
       )
     )
   )
@@ -2655,9 +2619,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR049") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -2682,9 +2643,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR046") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2715,9 +2673,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C3") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -2743,9 +2698,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR047") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -2770,9 +2722,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR053") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2802,9 +2751,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C5") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
         )
       )
     )
@@ -2860,9 +2806,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C6") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -2891,9 +2834,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C12") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
         )
       )
     )
@@ -2924,9 +2864,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C9") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -2956,9 +2893,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C15") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -2983,9 +2917,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR057") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3099,9 +3030,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C8") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -3130,9 +3058,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C11") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
         )
       )
     )
@@ -3163,9 +3088,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C14") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -3195,9 +3117,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C17") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -3222,9 +3141,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR061") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3254,9 +3170,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C19") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
         )
       )
     )
@@ -3312,9 +3225,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C7") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -3343,9 +3253,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C10") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
         )
       )
     )
@@ -3376,9 +3283,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C13") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -3407,9 +3311,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C16") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
         )
       )
     )
@@ -3440,9 +3341,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "C18") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
       )
     )
   )
@@ -3468,9 +3366,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR058") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -3495,9 +3390,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR059") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3669,9 +3561,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR0103") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -3722,9 +3611,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR0105") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -3749,9 +3635,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR0106") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3807,9 +3690,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR0107") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -3863,9 +3743,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR0108") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3921,9 +3798,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR0109") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
       )
     )
   )
@@ -3948,9 +3822,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
           (reference "#PWR0110") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
         )
       )
     )

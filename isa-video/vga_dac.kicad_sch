@@ -6,8 +6,8 @@
 
   (title_block
     (title "Resistor Ladder DAC and Output Buffer")
-    (date "2023-09-17")
-    (rev "2.2")
+    (date "2024-01-04")
+    (rev "2.4")
   )
 
   (lib_symbols
@@ -567,6 +567,11 @@
   (junction (at 115.57 173.99) (diameter 0) (color 0 0 0 0)
     (uuid f927070a-d1c5-4435-bb7d-c307935fa0f5)
   )
+
+  (no_connect (at 130.81 135.89) (uuid 0bc4cdd3-96fb-4442-8247-77338e02a2e2))
+  (no_connect (at 130.81 133.35) (uuid 7a46f6d5-b2ee-48e5-9d99-c4d765d977c6))
+  (no_connect (at 120.65 135.89) (uuid 8d7d94f7-1fcb-488a-a73e-e68703edf0d8))
+  (no_connect (at 120.65 133.35) (uuid f434a1b9-88c2-457a-ac34-d14a53698866))
 
   (bus_entry (at 100.33 59.69) (size 2.54 2.54)
     (stroke (width 0) (type default))
@@ -1498,9 +1503,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "U6") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 1)
-        )
       )
     )
   )
@@ -1541,9 +1543,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "U6") (unit 2)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 2)
         )
       )
     )
@@ -1586,9 +1585,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "U6") (unit 3)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 3)
-        )
       )
     )
   )
@@ -1629,9 +1625,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "U6") (unit 4)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 4)
         )
       )
     )
@@ -1674,9 +1667,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "U6") (unit 5)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "U?") (unit 5)
-        )
       )
     )
   )
@@ -1711,9 +1701,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN1") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
         )
       )
     )
@@ -1800,9 +1787,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN2") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
-        )
       )
     )
   )
@@ -1838,9 +1822,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN7") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
-        )
       )
     )
   )
@@ -1875,9 +1856,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN8") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
         )
       )
     )
@@ -1939,9 +1917,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN9") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
-        )
       )
     )
   )
@@ -1976,9 +1951,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN3") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
         )
       )
     )
@@ -2015,9 +1987,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN4") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
-        )
       )
     )
   )
@@ -2052,9 +2021,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN10") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
         )
       )
     )
@@ -2091,9 +2057,6 @@
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN5") (unit 1)
         )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
-        )
       )
     )
   )
@@ -2128,9 +2091,6 @@
       (project "isavideo"
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "RN6") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "RN?") (unit 1)
         )
       )
     )
@@ -2417,7 +2377,7 @@
   (symbol (lib_id "Device:C_Small") (at 180.34 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000614f2bd9)
-    (property "Reference" "C?" (at 182.6768 128.3716 0)
+    (property "Reference" "C27" (at 182.6768 128.3716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 182.6768 130.683 0)
@@ -2436,12 +2396,6 @@
     (pin "2" (uuid 67facc03-23fb-4b6c-abce-012925ac3d1a))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-00006043556f"
-          (reference "C?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "C?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "C27") (unit 1)
         )
@@ -2452,7 +2406,7 @@
   (symbol (lib_id "power:GND") (at 180.34 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000614f2bef)
-    (property "Reference" "#PWR?" (at 180.34 142.24 0)
+    (property "Reference" "#PWR073" (at 180.34 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 180.467 140.2842 0)
@@ -2467,12 +2421,6 @@
     (pin "1" (uuid f681a8e2-5d15-45cd-b94c-64520eb246f4))
     (instances
       (project "isavideo"
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000603a03ff"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/de1f3d0f-5e30-4cf9-a891-fb3b803f4ea1/00000000-0000-0000-0000-0000601ac602"
           (reference "#PWR073") (unit 1)
         )
