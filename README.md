@@ -107,6 +107,7 @@ I notice that while a monitor may initially accept this mode, tendency is it wil
 |-- isa-video: Kicad Design files
 |-- verilog: Updated Verilog code to support HDMI
 |-- vga_display_status: Vivado project to process ICE40 FPGA output to DVI transmiter that runs on my Mimas A7 FPGA board.
+|-- 3d-bracket: Step and STL file for a 3D-printable bracket
 ```
 
 ## Verilog Toolchain
