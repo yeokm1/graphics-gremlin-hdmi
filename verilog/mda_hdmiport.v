@@ -55,16 +55,14 @@ module mda_hdmiport(
             1	    1	    red     1	0	0
         */
 
-        current_red = video && (switch2 || switch3);
-        current_grn = video && ~(switch2 && switch3);
-        current_blu = video && (switch2 && ~(switch2 && switch3));
+        current_red <= video && (switch2 || switch3);
+        current_grn <= video && ~(switch2 && switch3);
+        current_blu <= video && (switch2 && ~(switch2 && switch3));
 
-        current_int = intensity;
+        current_int <= intensity;
         current_grn_int <= intensity;
 
     end
-
-    //assign hdmi_clk = clk;
 
     assign hdmi_de = current_de;
 
