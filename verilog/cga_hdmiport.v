@@ -21,26 +21,47 @@ module cga_hdmiport(
 
     );
 
-    assign hdmi_clk = clk;
+    reg[0:0] prev_de;
+    reg[0:0] current_hs;
+    reg[0:0] current_vs;
+    reg[0:0] current_red;
+    reg[0:0] current_blue;
+    reg[0:0] current_grn;
+    reg[0:0] current_grn_int;
+    reg[0:0] current_de;
 
-    reg prev_de = 0;
 
     // Offset bug in image being shifted one pixel to the right.
     always @(posedge clk)
     begin
-        hdmi_de <= prev_de;
+        current_de <= prev_de;
         prev_de <= display_enable;
+
+        current_vs <= vsync;
+        current_hs <= hsync;
+
+        current_red <= video[2];
+        current_blu <= video[0];
+        current_int <= video[3];
+
+        // To generate brown value
+        current_grn <= video[1] ^ (hdmi_red & video[1] & (hdmi_blu ^ 1) & (hdmi_int ^ 1));
+        current_grn_int <= hdmi_int ^ (hdmi_red & video[1] & (hdmi_blu ^ 1) & (hdmi_int ^ 1));
     end
 
-    assign hdmi_vs = vsync;
-    assign hdmi_hs = hsync;
 
-    assign hdmi_red = video[2];
-    assign hdmi_blu = video[0];
-    assign hdmi_int = video[3];
+    assign hdmi_clk = clk;
 
-    // To generate brown value
-    assign hdmi_grn = video[1] ^ (hdmi_red & video[1] & (hdmi_blu ^ 1) & (hdmi_int ^ 1));
-    assign hdmi_grn_int = hdmi_int ^ (hdmi_red & video[1] & (hdmi_blu ^ 1) & (hdmi_int ^ 1));
+    assign hdmi_de = current_de;
+
+    assign hdmi_vs = current_vs;
+    assign hdmi_hs = current_hs;
+
+    assign hdmi_red = current_red;
+    assign hdmi_blu = current_blu;
+    assign hdmi_int = current_int;
+
+    assign hdmi_grn = current_grn;
+    assign hdmi_grn_int = current_grn_int;
     
 endmodule
