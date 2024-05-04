@@ -30,10 +30,9 @@ module cga_hdmiport(
     reg[0:0] current_grn_int;
     reg[0:0] current_de;
 
-
-    // Offset bug in image being shifted one pixel to the right.
     always @(posedge clk)
     begin
+        // Offset bug in image being shifted one pixel to the right.
         current_de <= prev_de;
         prev_de <= display_enable;
 
