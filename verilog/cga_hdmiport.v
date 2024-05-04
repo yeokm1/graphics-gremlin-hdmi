@@ -22,6 +22,7 @@ module cga_hdmiport(
     );
 
     reg[0:0] prev_de;
+    reg[0:0] prev_de2;
     reg[0:0] current_hs;
     reg[0:0] current_vs;
     reg[0:0] current_red;
@@ -32,9 +33,10 @@ module cga_hdmiport(
 
     always @(posedge clk)
     begin
-        // Offset bug in image being shifted one pixel to the right.
+        // Offset bug in image being shifted 2 pixels to the right.
         current_de <= prev_de;
-        prev_de <= display_enable;
+        prev_de <= prev_de2;
+        prev_de2 <= display_enable;
 
         current_vs <= vsync;
         current_hs <= hsync;
