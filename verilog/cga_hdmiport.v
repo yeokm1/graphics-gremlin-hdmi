@@ -44,8 +44,8 @@ module cga_hdmiport(
         current_int <= video[3];
 
         // To generate brown value
-        current_grn <= video[1] ^ (hdmi_red & video[1] & (hdmi_blu ^ 1) & (hdmi_int ^ 1));
-        current_grn_int <= hdmi_int ^ (hdmi_red & video[1] & (hdmi_blu ^ 1) & (hdmi_int ^ 1));
+        current_grn <= video[1] ^ (video[2] & video[1] & (video[0] ^ 1) & (video[3] ^ 1));
+        current_grn_int <= video[3]^ (video[2] & video[1] & (video[0] ^ 1) & (video[3]^ 1));
     end
 
 
