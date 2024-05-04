@@ -25,7 +25,15 @@ module mda_hdmiport(
 
     );
 
-    assign hdmi_de = display_enable;
+    reg prev_de = 0;
+
+    // Offset bug in image being shifted one pixel to the right.
+    always @(posedge clk)
+    begin
+        hdmi_de <= prev_de;
+        prev_de <= display_enable;
+    end
+
     assign hdmi_int = intensity;
     assign hdmi_grn_int = intensity;
 
