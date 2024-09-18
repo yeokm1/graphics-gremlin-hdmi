@@ -2,7 +2,10 @@
 
 This is a modified version of the Graphics Gremlin ISA CGA/MDA graphics card to include a HDMI port. This is still based on the same Lattice ICE40HX4K FPGA.
 
+(A production run has been made of this board. You can contact explit[at]mailbox[dot]org if you wish to purchase a unit.)
+
 The latest revision now displays CGA colour 6 brown correctly. Since this project builds on the original project, it carries over some emulation inaccuracies in demos like 8088MPH and other applications.
+
 
 <img src="images\gg-hdmi-board.jpg" width="600">
 
