@@ -9,7 +9,7 @@ The latest revision now displays CGA colour 6 brown correctly. Since this projec
 
 <img src="images\gg-hdmi-board.jpg" width="600">
 
-Top view of board
+Top view of board including the metal bracket.
 
 <img src="images\gg-hdmi-board-ports.jpg" width="800">
 
