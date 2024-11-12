@@ -142,6 +142,7 @@ cd ..
 # Yosys
 git clone https://github.com/YosysHQ/yosys.git yosys
 cd yosys
+git submodule update --init
 make -j$(nproc)
 sudo make install
 ```
