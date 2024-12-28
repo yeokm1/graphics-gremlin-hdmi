@@ -207,7 +207,7 @@ The code is heavily based on the [HDMI_FPGA](https://github.com/dominic-meads/HD
 
 ## Bitstream Releases
 * 20240505 - Disables CGA Snow (Recommended)
-* 20241229 - Has CGA Snow. PC/XT systems which are overclocked with tools like [PC Sprint](https://github.com/reeshub/pc-sprint) should use this bitstream. This is due to the higher text mode data being clocked in which will cause artifacts if snow is totally avoided. More info in this [issue #5](#5).
+* 20241229 - Has CGA Snow. PC/XT systems which are overclocked with tools like [PC Sprint](https://github.com/reeshub/pc-sprint) should use this bitstream. This is due to the higher text mode data being clocked in which will cause artifacts if snow is totally avoided. More info in this [issue #5](https://github.com/yeokm1/graphics-gremlin-hdmi/issues/5).
 
 ## Hardware Releases
 
