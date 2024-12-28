@@ -14,13 +14,14 @@ PIN_DEF = gremlin.pcf
 DEVICE = hx8k
 ODIR = build
 DEPS = $(addprefix $(ODIR)/,$(addsuffix .d,$(IMAGES)))
+DEFINES ?=
 
 # Want to build report and main bin file
 all: $(addprefix $(ODIR)/,$(addsuffix .rpt,$(IMAGES))) $(ODIR)/$(PROJ).binm
 
 # removed %.v
 $(ODIR)/%.json: $(SOURCES)
-	yosys -p 'synth_ice40 -top $(basename $(notdir $@)) -json $@' $(SOURCES) -E $(basename $(notdir $@)).d
+	yosys -p 'synth_ice40 -top $(basename $(notdir $@)) -json $@' $(SOURCES) -E $(basename $(notdir $@)).d $(DEFINES)
 #	yosys -p 'synth_ice40 -top mda_top -json $@' $(SOURCES) -E $(DEPS)
 #	@echo yosys -p 'synth_ice40 -top isavideo -json $@' $^ -E $(DEPS)
 	echo $@

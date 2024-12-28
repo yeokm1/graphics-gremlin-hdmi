@@ -109,6 +109,7 @@ I notice that while a monitor may initially accept this mode, tendency is it wil
 |-- images: Images used in this repo
 |-- isa-video: Kicad Design files
 |-- verilog: Updated Verilog code to support HDMI
+    | -- release: Bitstreams
 |-- vga_display_status: Vivado project to process ICE40 FPGA output to DVI transmiter that runs on my Mimas A7 FPGA board.
 |-- 3d-bracket: Step and STL file for a 3D-printable bracket
 ```
@@ -156,15 +157,26 @@ In my Ubuntu WSL:
 ```bash
 cd verilog
 mkdir build
+
+# No CGA snow (default)
 make
+
+# With CGA snow
+make DEFINES="-DCGA_SNOW=1"
 ```
 
 ```bash
-# Program my provided bitstream
-iceprog -p isavideo.binm
+# Program without CGA snow bitstream
+iceprog -p release\isavideo-20240505-nosnow.binm
 
-# Program newly compiled bitstream
-iceprog -p build/isavideo.binm
+# Program with CGA snow bitstream
+iceprog -p release\isavideo-20241229-withsnow.binm
+
+# To see verbose output
+iceprog -v -p isavideo.binm
+
+# To suppress all output
+iceprog -v -p isavideo.binm 2> nul
 ```
 
 ## Special handling for brown colour
@@ -193,7 +205,11 @@ The FPGA test board reads the raw RGBI, HS, VS, DE and CLK signals that are give
 
 The code is heavily based on the [HDMI_FPGA](https://github.com/dominic-meads/HDMI_FPGA/) project by Dominic Meads and runs on Vivado 2023.
 
-## Releases
+## Bitstream Releases
+* 20240505 - Disables CGA Snow (Recommended)
+* 20241229 - Has CGA Snow. PC/XT systems which are overclocked with tools like [PC Sprint](https://github.com/reeshub/pc-sprint) should use this bitstream. This is due to the higher text mode data being clocked in which will cause artifacts if snow is totally avoided. More info in this [issue #5](https://github.com/yeokm1/graphics-gremlin-hdmi/issues/5).
+
+## Hardware Releases
 
 * 2.1 (9 Aug 2021): Initial release for GG (HDMI)
 * 2.2 (17 Sept 2023): Extra Green control line for TFP410
